@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root{
+    --bg: #FFF;
+    --texto: #111;
+    --borda: #e5e7eb;
+    --caixa: #f8fafc;
+    --acao: #2563eb;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    counter-reset: var(--texto);
+}
