@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg);
-    counter-reset: var(--texto);
+    color: var(--texto);
 }
 
 .topo {
@@ -56,7 +56,6 @@ body {
 }
 
 h1 {
-    margin: .5rem;
     font-size: 1.6rem;
 }
 
@@ -104,4 +103,5 @@ input {
     align-items: center;
     justify-content: center;
     color: #6b7280;
+    margin-top: auto;
 }
