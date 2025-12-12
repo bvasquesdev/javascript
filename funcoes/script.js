@@ -6,3 +6,4 @@ const repeatText = (text, repeat = 2) => {
 
 repeatText("Testando");
 repeatText("Agora repete 5 vezes", 5);
+0
