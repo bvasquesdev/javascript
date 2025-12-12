@@ -1,6 +1,6 @@
 function gerarSenha(){
     let senha = "";
-    let todosOsCaracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=<>?/"
+    let todosOsCaracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=<>?/";
     let listaCaracteres = todosOsCaracteres.split("");
 
     for (let i = 0; i < 8; i++){
@@ -9,7 +9,9 @@ function gerarSenha(){
         senha += caracterSorteado;
     }
 
-    return senha;
+    document.getElementById("senha").value = senha;
 }
 
-console.log(gerarSenha());
+    const botao = document.getElementById("btnGerar");
+    botao.addEventListener("click", gerarSenha);
+

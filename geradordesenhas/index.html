@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de Senhas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
         <h1>Gerador de Senhas</h1>
-            <button onclick="gerarSenha()">Gerar Senha</button>
-            <input type="text" id="senhaGerada" readonly />
-    </div>
-</body>
+      </header>
+      <article>
+        <input
+          type="text"
+          id="senha"
+          placeholder="Sua senha aparecerá aqui"
+          readonly/>
+        <button id="btnGerar">Gerar Senha</button>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
